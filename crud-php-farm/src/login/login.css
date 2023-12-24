@@ -1,0 +1,92 @@
+@import url(../assets/main.css);
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bege);
+}
+
+h1{
+    color: var(--rosa);
+}
+
+#form, .inputs, .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form {
+    width: 25rem;
+    height: fit-content;
+    padding: 2rem;
+    gap: 1.6rem;
+}
+
+label {
+    width: 20rem;
+    border: 2px solid var(--rosa);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 26px;
+    padding-left: 1rem;
+}
+
+#user, #password {
+    width: 16rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-weight: 500;
+    color: var(--rosa);
+}
+
+#user, #password::placeholder{
+    font-weight: 700;
+    opacity: .8;
+
+}
+
+.inputs, .buttons {
+    gap: 1.6rem;
+}
+
+#btn-login{
+    background-color: var(--rosa);
+    color: var(--bege);
+    text-decoration: none;
+    width: 10rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
+
+#btn-cad {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--rosa);
+    font-weight: 600;
+}
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px var(--bege) inset !important;
+    -webkit-text-fill-color: var(--rosa) !important;
+}
+
+#eye {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

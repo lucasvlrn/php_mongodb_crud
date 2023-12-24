@@ -1,0 +1,44 @@
+@import url(../../assets/main.css);
+@import url(../create/create.css);
+
+#id-label {
+    border: 2px solid var(--verde-esc);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 26px;
+    padding-left: 1rem;
+    width: 22rem;
+}
+
+#id {
+    width: 16rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-weight: 500;
+    color: var(--verde-esc);
+}
+
+h4 {
+    width: 22rem;
+    text-align: justify;
+    font-weight: 500;
+    opacity: .8;
+}
+
+b {
+    color: var(--verde-esc);
+}
+
+.others-label {
+    padding-right: 1.2rem;
+}
+
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 800px var(--bege) inset !important;
+    -webkit-text-fill-color: var(--verde-esc) !important;
+} 

@@ -1,0 +1,66 @@
+@import url(../../assets/main.css);
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bege);
+    gap: 1rem;
+}
+
+table{
+    width: 15rem;
+    height: fit-content;
+}
+
+table, th, td {
+    border: 2px solid #000;
+    border-collapse:collapse;
+}
+
+
+th {
+    padding: 1rem;
+    background-color: var(--verde-esc);
+    color: var(--bege);
+    
+}
+td {
+    padding: .5rem;
+}
+th, td {
+    text-align: center;
+}
+
+tr:hover{
+    background-color: var(--verde-esc);
+    color: var(--bege);
+}
+
+@media (max-width: 768px) {
+    table {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+    }
+    thead > tr{
+        float: left;
+        display: flex;
+        flex-direction: column;
+    }
+    tr {
+        display: flex;
+        flex-direction: column; 
+    }
+    td {
+        padding: .75rem;
+    }
+    th{        
+        width: 7.5rem;
+        padding: .75rem;
+       
+    }
+}

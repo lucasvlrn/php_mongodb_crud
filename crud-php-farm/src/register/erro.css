@@ -1,0 +1,21 @@
+@import url(../assets/main.css);
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bege);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+h1 {
+    color: #f00;
+    font-weight: 700;
+}

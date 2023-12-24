@@ -1,0 +1,106 @@
+@import url(../../assets/main.css);
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bege);
+    flex-direction: column;
+    gap: 5rem;
+}
+
+h1 {
+    color: var(--verde-esc);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputs-mini {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.price, .others{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#name-label {
+    width: 22rem;
+}
+
+#name-label, .price-label, .others-label {
+    border: 2px solid var(--verde-esc);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 26px;
+    padding-left: 1rem;
+}
+
+.price-label {
+    width: 10rem;
+}
+
+#name {
+    width: 16rem;
+}
+
+.price-input {
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.price-input::placeholder {
+    font-size: .8rem;
+}
+#name, .price-input, .others-input{
+    height: 2rem;
+    padding-left: 1rem;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-weight: 500;
+    color: var(--verde-esc);
+}
+
+.others-input {
+    width: 10rem;
+}
+
+.others-label {
+    padding-right: .45rem;
+}
+
+#cad {
+    background-color: var(--verde-esc);
+    color: var(--bege);
+    text-decoration: none;
+    width: 10rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
+
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 800px var(--bege) inset !important;
+    -webkit-text-fill-color: var(--verde-esc) !important;
+} 

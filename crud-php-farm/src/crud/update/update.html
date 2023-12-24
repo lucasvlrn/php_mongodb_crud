@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html. lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="update.css" />
+    <title>Cadastrar informações</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="update.php" method="post">
+        <h1>Atualizar Produtos</h1>
+
+        <label id="id-label" for="med">
+          <input
+            id="id"
+            required
+            maxlength="20"
+            type="text"
+            placeholder="Número de Identificação"
+            name="id"
+          />
+        </label>
+
+        <label id="name-label" for="med">
+          <input
+            id="name"
+            required
+            maxlength="20"
+            type="text"
+            placeholder="Nome do Remédio"
+            name="name"
+          />
+        </label>
+        <div class="inputs-mini">
+          <div class="price">
+            <label for="price1" class="price-label">
+              <input
+                name="cost"
+                class="price-input"
+                required
+                maxlength="5"
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                placeholder="Preço de Custo"
+                
+              />
+            </label>
+            <label for="price2" class="price-label">
+              <input
+                name="sell"
+                class="price-input"
+                required
+                maxlength="5"
+                type="text"
+                placeholder="Preço de Venda"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+              />
+            </label>
+          </div>
+          <div class="others">
+            <label class="others-label" for="date">
+              <input name="date" class="others-input" type="date" placeholder="Data de Venc" />
+            </label>
+            <label class="others-label" for="lote">
+              <input name="lote" class="others-input" type="text" placeholder="Lote" />
+            </label>
+          </div>
+        </div>
+        <button id="cad">Atualizar</button>
+      </form>
+      <div class="device">
+      <h4>Insira o id correspondente e altere os dados
+      conforme desejar. <b>Caso há dados verdadeiros,
+      repita os nos campos</b> acima para menores
+      conflitos dentro do banco de dados.</h4>
+    </div>
+    </div>
+  </body>
+</html.
